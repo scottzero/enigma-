@@ -13,7 +13,7 @@ end
 
 def test_attributes
 assert_equal @key, @shift.key
-
+assert_equal @offset, @shift.offset
 end
 
 end

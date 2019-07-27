@@ -7,4 +7,6 @@ def initialize(key, offset)
   @offset = offset
 end
 
+
+
 end
