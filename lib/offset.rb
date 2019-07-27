@@ -31,5 +31,10 @@ class Offset
     square_numeric_date[-2].to_i
   end
 
+  def offset_d
+    #get value from big num for d
+    square_numeric_date[-1].to_i
+  end
+
 
 end
