@@ -7,6 +7,10 @@ def initialize(key, offset)
   @offset = offset
 end
 
+def char_set
+("a".."z").to_a << " "
+end
+
 def shift_a
 @key.key_a + @offset.offset_a
 end
