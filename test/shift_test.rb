@@ -18,7 +18,7 @@ end
 
 def test_shift_sums_for_key_and_offset
 assert_equal 77, @shift.shift_a
-assert_equal 45, @shift.shift_b
+assert_equal 65, @shift.shift_b
 assert_equal 69, @shift.shift_c
 assert_equal 35, @shift.shift_d
 end
