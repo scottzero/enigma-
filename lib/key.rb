@@ -21,5 +21,10 @@ class Key
     @key[3..4].to_i
   end
 
+  #need to make a random key generator and pad with 0s
+  def key_random
+    Random.rand(100000).to_s.rjust(5, "0")#parameter is the range
+  end
+
 
 end
