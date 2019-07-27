@@ -20,4 +20,8 @@ def test_key_string_parse
   assert_equal 34, @key.key_d
 end
 
+def test_random_key_gen
+assert_equal 5, @key.key_random.length
+end
+
 end
