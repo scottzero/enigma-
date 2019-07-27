@@ -21,6 +21,7 @@ end
 def test_offset_a_b_c_d
 assert_equal 2, @offset.offset_a
 assert_equal 9, @offset.offset_b
+assert_equal 6, @offset.offset_c
 end
 
 end
