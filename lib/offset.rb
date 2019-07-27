@@ -13,4 +13,13 @@ class Offset
   def square_numeric_date
     (@date.to_i ** 2).to_s # ** exponent^...it WORKS! Big NUMBER, reminder ask meg or ian about doubles or longs  :)
   end
+
+  #need method to take the last 4 digits of big number date per letter
+  def offset_a
+    #take our square_numeric_date_method and parse index
+    #is a string so need to convert back to i
+    square_numeric_date[-4].to_i
+  end
+
+
 end
