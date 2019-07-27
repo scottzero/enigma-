@@ -11,10 +11,15 @@ end
 
 def test_date #need to test for todays date
 assert_equal "072719",@offset.date
+assert_equal 6, @offset.date.length
 end
 
 def test_squaring_date
 assert_equal "5288052961", @offset.square_numeric_date
+end
+
+def test_offset_a_b_c_d
+assert_equal 2, @offset.offset_a
 end
 
 end
