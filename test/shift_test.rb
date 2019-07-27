@@ -30,7 +30,6 @@ expected = {
   :shift_c => 69,
   :shift_d => 35
 }
-
 assert_equal expected, @shift.shift_store
 end
 

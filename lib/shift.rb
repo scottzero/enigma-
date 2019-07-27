@@ -23,8 +23,13 @@ def shift_d
 @key.key_d + @offset.offset_d
 end
 
-
-
-
+def shift_store
+shift_store_hash = Hash.new
+shift_store_hash[:shift_a] = shift_a
+shift_store_hash[:shift_b] = shift_b
+shift_store_hash[:shift_c] = shift_c
+shift_store_hash[:shift_d] = shift_d
+return shift_store_hash
+end
 
 end
