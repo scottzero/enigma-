@@ -8,4 +8,8 @@ end
 def test_it_exists
 assert_instance_of Offset, @offset
 end
+
+def test_date #need to test for todays date
+assert_equal "072719",@offset.date
+end
 end
