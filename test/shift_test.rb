@@ -23,4 +23,15 @@ assert_equal 69, @shift.shift_c
 assert_equal 35, @shift.shift_d
 end
 
+def test_shift_store
+expected = {
+  :shift_a => 77,
+  :shift_b => 65,
+  :shift_c => 69,
+  :shift_d => 35
+}
+
+assert_equal expected, @shift.shift_store
+end
+
 end
