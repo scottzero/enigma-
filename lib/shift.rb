@@ -36,4 +36,13 @@ shift_store_hash[:shift_d] = shift_d
 return shift_store_hash
 end
 
+def encryption(message)
+message_chars_array = message.downcase.chars #=>["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]
+shifts_hash = shift_store #storing shift_store into variable
+post_encryption = [] #need to store after encryption
+message_chars_array.each_with_index do |char,index|
+  if char_set.include?(char)
+    index_matcher = char_set.find_index(char)
+
+
 end
