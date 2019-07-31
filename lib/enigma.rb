@@ -5,14 +5,25 @@ class Enigma
   end
 
   def encrypt(message, key = @key, date = @date) #default args to init vars
-    shifts= Shift.new(Key.new(key), Offset.new(date))
-    encryption = shifts.encryption(message)
-    encryption
+    shift_1= Shift.new(Key.new(key), Offset.new(date))
+    #adjusted to fit project requirenments
+    {
+      :encryption => shift_1.encryption(message),
+      :key => shift_1.key.key,
+      :date => shift_1.offset.date
+    }
+    # encryption = shifts.encryption(message)
+    # encryption
   end
 
   def decrypt(message, key = @key, date = @date) #default args to init vars
-    shifts= Shift.new(Key.new(key), Offset.new(date))
-    decryption = shifts.decryption(message)
-    decryption
+    shift_1= Shift.new(Key.new(key), Offset.new(date))
+    {
+      :decryption => shift_1.decryption(message),
+      :key => shift_1.key.key,
+      :date => shift_1.offset.date
+    }
+    # decryption = shifts.decryption(message)
+    # decryption
   end
 end
