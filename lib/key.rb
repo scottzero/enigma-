@@ -4,9 +4,8 @@ class Key
     @key = key
   end
 
-  #need to have key make its 75634 into 75 a, 56 b, 63 c,34 d
   def key_a
-    @key[0..1].to_i#takes the string "75634" and returns 75
+    @key[0..1].to_i
   end
 
   def key_b
@@ -21,8 +20,8 @@ class Key
     @key[3..4].to_i
   end
 
-  #need to make a random key generator and pad with 0s
   def key_random
-    Random.rand(100000).to_s.rjust(5, "0")#rjust is string method, want 5 chars in string,if we get < 5 chars pad with 0's
+    Random.rand(100000).to_s.rjust(5, "0")
   end
+  
 end
