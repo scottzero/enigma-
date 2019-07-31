@@ -23,8 +23,6 @@ class Key
 
   #need to make a random key generator and pad with 0s
   def key_random
-    Random.rand(100000).to_s.rjust(5, "0")#parameter is the range
+    Random.rand(100000).to_s.rjust(5, "0")#rjust is string method, want 5 chars in string,if we get < 5 chars pad with 0's
   end
-
-
 end

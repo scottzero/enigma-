@@ -22,7 +22,7 @@ class Offset
   end
 
   def offset_b
-    #get value from nbig num for b
+    #get value from big num for b
     square_numeric_date[-3].to_i
   end
 
@@ -35,6 +35,4 @@ class Offset
     #get value from big num for d
     square_numeric_date[-1].to_i
   end
-
-
 end
