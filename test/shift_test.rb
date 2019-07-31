@@ -44,4 +44,11 @@ expected = {
 assert_equal expected, @shift.shift_store
 end
 
+def test_can_encrypt
+key_1 = Key.new("02715")
+offset_1 = Offset.new("040895")
+shift_1 = Shift.new(key_1, offset_1)
+assert_equal "keder ohulw", shift_1.encryption("hello world")
+end
+
 end

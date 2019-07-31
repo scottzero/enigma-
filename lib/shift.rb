@@ -45,8 +45,6 @@ message_chars_array.each_with_index do |char,index|
     index_matcher = char_set.find_index(char)
     post_encryption << char_set.rotate(shifts_hash.values[index % shifts_hash.values.count])[index_matcher]
     # binding.pry
-    else
-      post_encryption << char
     end # end if
   end #end each
   # binding.pry
