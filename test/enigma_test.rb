@@ -13,4 +13,5 @@ class EnigmaTest < Minitest::Test
   def test_it_can_encrypt
     assert_equal "keder ohulw", @enigma.encrypt("hello world", "02715", "040895")
   end
-end
+  end
+end 

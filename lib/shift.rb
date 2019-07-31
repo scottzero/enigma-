@@ -50,5 +50,4 @@ message_chars_array.each_with_index do |char,index|
   # binding.pry
   post_encryption.join
 end #end method
-
 end
