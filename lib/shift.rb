@@ -51,6 +51,7 @@ message_chars_array.each_with_index do |char,index|
   post_encryption.join
 end #end method
 
+
 def decryption(message)
 message_chars_array = message.downcase.chars #=>["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]
 shifts_hash = shift_store #storing shift_store into variable
@@ -67,3 +68,6 @@ message_chars_array.each_with_index do |char,index|
 end #end method
 
 end
+
+end
+
