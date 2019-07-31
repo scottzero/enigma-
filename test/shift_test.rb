@@ -59,3 +59,6 @@ class ShiftTest < Minitest::Test
     assert_equal "hello world", shift_1.decryption("keder ohulw")
   end
 end
+
+end
+
