@@ -62,7 +62,6 @@ attr_reader :key, :offset
       # binding.pry
       end # end if
     end #end each
-    # binding.pry
-    post_decryption.join
-  end #end method
-end
+      post_decryption.join
+  end  
+end 
