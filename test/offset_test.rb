@@ -9,7 +9,7 @@ class OffsetTest < Minitest::Test
     assert_instance_of Offset, @offset
   end
 
-  def test_date #need to test for todays date
+  def test_date 
     assert_equal "072719",@offset.date
     assert_equal 6, @offset.date.length
   end
