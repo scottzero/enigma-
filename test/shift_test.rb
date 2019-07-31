@@ -51,4 +51,13 @@ shift_1 = Shift.new(key_1, offset_1)
 assert_equal "keder ohulw", shift_1.encryption("hello world")
 end
 
+def test_can_decrypt
+  key_1 = Key.new("02715")
+  offset_1 = Offset.new("040895")
+  shift_1 = Shift.new(key_1, offset_1)
+  assert_equal "hello world", shift_1.decryption("keder ohulw")
+  end
 end
+
+end
+
